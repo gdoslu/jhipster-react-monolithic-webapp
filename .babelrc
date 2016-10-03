@@ -1,0 +1,20 @@
+{
+    "presets": ["react", "es2015", "stage-0"],
+    "plugins": [
+        ["babel-plugin-module-alias", [
+            { "src": "./src/main/js/actions", "expose": "actions" },
+            { "src": "./src/main/js/config", "expose": "config" },
+            { "src": "./src/main/js/rest", "expose": "rest" },
+            { "src": "./src/main/js/router", "expose": "router" },
+            { "src": "./src/main/js/reducers", "expose": "reducers" },
+            { "src": "./src/main/js/ui/component", "expose": "component" },
+            { "src": "./src/main/js/ui/pages", "expose": "pages" },
+            { "src": "./src/main/js/lang", "expose": "lang" }
+        ]]
+    ],
+    "env": {
+        "development": {
+            "presets": ["react-hmre"]
+        }
+    }
+}
